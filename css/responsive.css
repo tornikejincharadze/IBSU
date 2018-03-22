@@ -1,4 +1,64 @@
 @media screen and (min-width:0px) {
+	.bar1{
+		width: 30px;
+	    height: 5px;
+	    background-color: #b3003b;
+	    transition: all linear .3s;	
+	}
+	.bar2{
+		width: 30px;
+	    height: 5px;
+	    background-color: #b3003b;
+	    margin-top: 3px;
+    	margin-bottom: 3px;	
+    	transition: all linear .3s;	
+	}
+	.bar3{
+		width: 30px;
+	    height: 5px;
+	    background-color: #b3003b;
+	    transition: all linear .3s;		
+	}
+	.bar1.active{
+		-webkit-transform: translate(0px,5px) rotate(90deg);
+		transform: translate(0px,5px) rotate(45deg);
+	}
+	.bar3.active{
+		-webkit-transform: translate(0px,-10px) rotate(-45deg);
+		transform: translate(0px, -10px) rotate(-45deg);
+	}
+	.bar2.active{
+		opacity: 0;
+	}
+	.responsive-menu{
+		display: none;
+		text-align: center;
+    	line-height: 4;
+    	padding-top: 5px;
+    	background-color: white;
+    	position: absolute!important;
+    	z-index: 20;
+    	top: 125px;
+	}
+	.menu-button-responsive button{
+		border: 0;
+    	padding: 0;
+    	background-color: transparent;
+	}
+	.responsive-menu a:hover{
+		color: white;
+		background-color: lightblue;
+	}
+
+
+	header{
+		margin-bottom: 5px;
+	}
+	#header-middle {
+		display: none;
+	}
+
+
 	#header-container {
 	    margin-top: 20px;
 	    line-height: 1;
@@ -29,14 +89,14 @@
 	#donate-bar{
 		height: 25px;
 		line-height: 25px;
-		margin-top: 5px;
-		margin-bottom: 5px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 	#donate-bar a {
     	font-size: 14px;
 	}
 	#header-right {
-		margin-top: 10px;
+		margin-top: 0px;
 		line-height: 1;
 		height: initial;
     	padding-left: 15px!important;
@@ -330,6 +390,17 @@
 
 
 @media screen and (min-width:768px) {
+	.menu-button-responsive{
+		display: none;
+	}
+	#header-middle{
+		display: block;
+	}
+
+
+	header {
+	    margin-bottom: 0px;
+	}
 	#header-container {
 	    line-height: 70px;
   		margin-top: 0px;
