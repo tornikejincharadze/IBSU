@@ -44,12 +44,15 @@
 		border: 0;
     	padding: 0;
     	background-color: transparent;
+    	outline: none;
 	}
 	.responsive-menu a:hover{
 		color: white;
 		background-color: lightblue;
 	}
-
+	.menu-button-responsive{
+		display: inline-block;
+	}
 
 	header{
 		margin-bottom: 5px;
@@ -390,11 +393,14 @@
 
 
 @media screen and (min-width:768px) {
-	.menu-button-responsive{
+	.menu-button-responsive-container{
 		display: none;
 	}
 	#header-middle{
 		display: block;
+	}
+	.responsive-menu {
+    	display: none!important;
 	}
 
 
